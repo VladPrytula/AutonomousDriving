@@ -11885,7 +11885,7 @@ Using TensorFlow backend.
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Collecting tqdm
   Downloading tqdm-4.11.1-py2.py3-none-any.whl (45kB)
-    100% |################################| 51kB 1.2MB/s 
+    100% |################################| 51kB 1.1MB/s 
 Installing collected packages: tqdm
 Successfully installed tqdm-4.11.1
 <span class="ansi-yellow-fg">You are using pip version 8.1.2, however version 9.0.1 is available.
@@ -14698,7 +14698,7 @@ Let us now try to use image augmentation from Keras library and see if that woul
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># input image dimensions</span>
@@ -14717,7 +14717,7 @@ Let us now try to use image augmentation from Keras library and see if that woul
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># split data into train and test</span>
@@ -14748,7 +14748,7 @@ Let us now try to use image augmentation from Keras library and see if that woul
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">()</span>
@@ -14828,7 +14828,7 @@ Let us now try to use image augmentation from Keras library and see if that woul
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">summary</span><span class="p">()</span>
@@ -14996,7 +14996,7 @@ Epoch 30/30
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">model</span><span class="o">.</span><span class="n">load_weights</span><span class="p">(</span><span class="s2">&quot;keras_model.h5&quot;</span><span class="p">)</span>
@@ -15015,8 +15015,8 @@ Epoch 30/30
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Test score: 0.0767480605867
-Test accuracy: 0.983768804509
+<pre>Test score: 0.0767480586517
+Test accuracy: 0.983768804406
 </pre>
 </div>
 </div>
@@ -15132,7 +15132,7 @@ Test accuracy: 0.983768804509
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">plot_sample_keras</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
@@ -15158,7 +15158,7 @@ Test accuracy: 0.983768804509
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### Load the images and plot them here.</span>
@@ -15174,7 +15174,7 @@ Test accuracy: 0.983768804509
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plot_sample_keras</span><span class="p">(</span><span class="n">img_array</span><span class="p">,</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">17</span><span class="p">))</span>
@@ -19269,7 +19269,7 @@ QgYGH0AIIYQQQgghA4MPIIQQQgghhJCBwQcQQgghhBBCyMDgAwghhBBCCCFkYPABhBBCCCGEEDIw
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">small_img_array</span> <span class="o">=</span> <span class="p">[</span><span class="n">img</span><span class="o">.</span><span class="n">resize</span><span class="p">((</span><span class="mi">32</span><span class="p">,</span><span class="mi">32</span><span class="p">))</span> <span class="k">for</span> <span class="n">img</span> <span class="ow">in</span> <span class="n">img_array</span><span class="p">]</span>
@@ -20294,7 +20294,7 @@ fxMAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">true_labels</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">14</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">38</span><span class="p">,</span> <span class="mi">38</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">14</span><span class="p">])</span>
@@ -20315,6 +20315,37 @@ fxMAAAAASUVORK5CYII=
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>accuracy on new images is: 0.8571428571428572
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">true_labels</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">14</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">14</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">38</span><span class="p">,</span> <span class="mi">38</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">14</span><span class="p">])</span>
+<span class="n">predicted_labels</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">,</span> <span class="n">preds</span><span class="p">)))</span>
+<span class="c1"># compute descripancy with predicted labels</span>
+<span class="n">error</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">predicted_labels</span> <span class="o">-</span> <span class="n">true_labels</span> <span class="k">if</span> <span class="n">x</span><span class="o">!=</span><span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;accuracy on new images without unknown klass is: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span> <span class="mi">1</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">error</span><span class="p">)</span><span class="o">/</span><span class="nb">len</span><span class="p">(</span><span class="n">predicted_labels</span><span class="p">)))</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>accuracy on new images without unknown klass is: 0.9230769230769231
 </pre>
 </div>
 </div>
@@ -20468,6 +20499,17 @@ gg==
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Trained model performed really well signs that belonged to know classes (I took photos in Germany, so that was expected). It also performed well on US signs that I have downloaded form internet. Model, as expected, misclassified the unknow sign-type, but assigned it to the class that is visually similar.</p>
+<p><span style="color:blue">Update of the answer based on the feedback recieved</span>.</p>
+<ol>
+<li>First let us summarize the accuracies on test set and the accuracy obtained on real-live images:<ol>
+<li>Test Set Accuracy is : 0.983768804509</li>
+<li>Live Set Accuracy (with the sign out of the know set) : 0.8571428571428572</li>
+<li>Live Set Accuracy (with all the signs belonging to the known classes): 0.9230769230769231</li>
+</ol>
+</li>
+</ol>
+<p>It can be seen that accuracy on the candidate live images is <em>lower</em> then on the test set, though it is still rather high (almost 92 if all signs belong to known classes, and almost 86% when there is an unknown class). Obviously the performance of the system would continue to get worth if percentage of signs from unknown classes would grow.</p>
+<p>The other important observation is that the model managed not only to correctly classify signs from the photos that I took in Munich, but also US signs that were downloaded from the internet. On the other hand, in term of real time applicability, I must note that а glowing sign 60km/h was completely misclassified (actually none of 5 predictions, as it can be seen below, for this sign, contain the correct label). This implies that system is still not suited for real time usage and some additional trick are needed or additional training data. One of the possible reasons for misclassification of the glowing sign is that the intensity of the surrounding circle was high compared to the intensity of the digits. This could potentially be solved with additional preprocessing such as whitening or min_max scaling during the pre-training phase.</p>
 
 </div>
 </div>
