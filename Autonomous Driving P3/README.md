@@ -1,8 +1,8 @@
 # Behavioral Cloning (aka Imitation learning)
 
-This project was created as an assessment for the [Self-Driving Car Nanodegree](https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd013) Program by Udacity. 
-The goal of the project is to build a system (based on deep convnets in my case) so that the system coudl drive a car autonomously.
-The interesting condition is that train data is gather by human driving a car in a simulator.The simulator has two modes. 
+This project was created for the [Self-Driving Car Nanodegree](https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd013) Program by Udacity. 
+The goal of the project is to build a system (based on deep convnets in my case) so that the system could drive a car autonomously.
+The interesting condition is that train data is gathered by a human driving a car in a simulator.The simulator has two modes. 
 * In the "training mode" the car can be controlled through a keyboard or a game pad to generated data. 
 * In the "autonomous mode"  the car receives it's input commands by the python script.
 
