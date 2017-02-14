@@ -1,5 +1,9 @@
 # Behavioral Cloning (aka Imitation learning)
 
+*Pretrained model files are here:*
+- [model.json](https://drive.google.com/open?id=0B8Ig8LBgb5IzUDZablVsNmhzbEE)
+- [model.h5](https://drive.google.com/open?id=0B8Ig8LBgb5IzcXhVXzRpZ2FFTFU)
+
 This project was created for the [Self-Driving Car Nanodegree](https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd013) Program by Udacity. 
 The goal of the project is to build a system (based on deep convnets in my case) so that the system could drive a car autonomously.
 The interesting condition is that train data is gathered by a human driving a car in a simulator.The simulator has two modes. 
