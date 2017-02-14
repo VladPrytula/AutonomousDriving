@@ -1,12 +1,16 @@
 # Behavioral Cloning (aka Imitation learning)
 
-This project was created as an assessment for the [Self-Driving Car Nanodegree](https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd013) Program by Udacity. The goal is to drive a car autonomously in a simulator using a deep neuronal network (DNN) trained on human driving behavior. For that Udacity provided the simulator and a basic python script to connect a DNN with it. The simulator has two modes. In the "training mode" the car can be controlled through a keyboard or a game pad to generated data. More information about the data and it's structure can be found in the corresponding [section](https://github.com/pkern90/behavioral-cloning/blob/master/README.md#data). In the "autonomous mode" however the car receives it's input commands by the python script.
+This project was created as an assessment for the [Self-Driving Car Nanodegree](https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd013) Program by Udacity. 
+The goal of the project is to build a system (based on deep convnets in my case) so that the system coudl drive a car autonomously.
+The interesting condition is that train data is gather by human driving a car in a simulator.The simulator has two modes. 
+* In the "training mode" the car can be controlled through a keyboard or a game pad to generated data. 
+* In the "autonomous mode"  the car receives it's input commands by the python script.
 
-The results of the autonomous driving can be seen on animated images below 
+The results of the autonomous driving can be seen on animated images below.
 
 Track 1                   |  Track 2
 :----------------------------:|:------------------------------:
-[![](https://youtu.be/Y_ZFA9DfSsA/0.jpg)](https://youtu.be/Y_ZFA9DfSsA) | ()
+[![](https://img.youtube.com/vi/Y_ZFA9DfSsA/0.jpg)](https://youtu.be/Y_ZFA9DfSsA) |[![](https://img.youtube.com/vi/jaxhNCQOzTk/0.jpg)](https://youtu.be/jaxhNCQOzTk)
 
 
 # Dependencies
@@ -71,6 +75,8 @@ Fully trained model can be downloaded here
 - [model.json](https://drive.google.com/open?id=0B02X9kiSe3GBOHZUTmU4S0FNck0)
 - [model.h5](https://drive.google.com/file/d/0B02X9kiSe3GBTUhkeVFXalQxTlE/view?usp=sharing)
 
+It would be extremely intersting to try to do the project with squeeze net (todo for me)
+
 
 ## Data
 ### Data Collection
@@ -81,9 +87,10 @@ This smart data collection hack is mentioned in NVIDIA paper. Looking ahead it i
 or on the stitched together image with only one (not adjusted) steering angel leads to much worse results.
 
 
-| Left          | Center        | Right  |
-| ------------- |:-------------:| ------|
-|![left](images/left.jpg) | ![center](images/center.jpg) | ![right](images/right.jpg)
+| :: | Left          | Center        | Right  |
+| :---: | ------------- |:-------------:| ------|
+|Image|![left](images/left.jpg) | ![center](images/center.jpg) | ![right](images/right.jpg)
+|Angle (rounded)|0.36|	-0.25|-0.100000|
 
 As it is mentioned in the lecture for training data I have recorded data of two types:
 ##### **Controlled Driving**  
@@ -122,6 +129,14 @@ This again is an important thing (see Conclusion section)
 
 Model is trained using adam optimizer. In order to evaluate each epoch validation loss is calculated. The model that is
 attached to this repository is trained using 5 epochs.
+
+Using the modified keras image generator, modified data is generated on the fly. Important steps in data augmentation are:
+* Affine transform the image
+* Change brightness. Brightness is extremely important for successful driving on track 2 due to the high amount of shadows there.
+* Use mirroring (with negation of steering angle). Mirroring is important to remove remove training bias in steering angle and make data more balanced.
+
+I have seen on the forums I have seen that students also use creation of artificially shadowed parts of images. 
+This might really be useful I have not tried since the model performs well without this.
 
 
 ## 5. Conclusion
