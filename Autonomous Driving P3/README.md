@@ -27,6 +27,11 @@ This project requires **Python 3.4** and the following Python libraries installe
 - [eventlet](http://eventlet.net/)
 - [pillow](https://python-pillow.org/)
 
+_Remark_ I am using a custom build docker gpu image and in order to visualize the model I had to also install:
+- [graphviz] apt-get install graphviz
+- [pydot] pip3 install pydot-ng (ng is important for compatability issues)
+
+
 
 # HowTo
 ## Autonomous Driving
