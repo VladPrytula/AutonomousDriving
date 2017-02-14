@@ -10,7 +10,7 @@ The results of the autonomous driving can be seen on animated images below.
 
 Track 1                   |  Track 2
 :----------------------------:|:------------------------------:
-[![](https://img.youtube.com/vi/Y_ZFA9DfSsA/0.jpg)](https://youtu.be/Y_ZFA9DfSsA) |[![](https://img.youtube.com/vi/jaxhNCQOzTk/0.jpg)](https://youtu.be/jaxhNCQOzTk)
+[![](https://img.youtube.com/vi/J-bnl6zxIAU/0.jpg)](https://youtu.be/J-bnl6zxIAU)| [![](https://img.youtube.com/vi/mCXqVTfHlv4/0.jpg)](https://youtu.be/mCXqVTfHlv4) 
 
 
 # Dependencies
