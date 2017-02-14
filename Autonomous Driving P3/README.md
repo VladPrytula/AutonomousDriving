@@ -61,13 +61,14 @@ Down to its core this project is an image recognition task and I did not want tr
 available pertained models for image recognition is vgg16. I have used that with a modification to adopt the regression nature of the problem
 (top layer is built to be able to predict contentious values instead of classes) The pertained model is automatically downloaded when program is run for the first time during the training phase
 
-**_The model architecture can be seen in the file train_output.txt_**
+**_The model architecture_**
+![left](images/model.png) 
 
 I have also tried an architectures based on [comma.ai](https://github.com/commaai/research). It works also but takes longer to train in my case.
 Fully trained model can be downloaded here
 
-- [model.json](https://drive.google.com/open?id=0B02X9kiSe3GBOHZUTmU4S0FNck0)
-- [model.h5](https://drive.google.com/file/d/0B02X9kiSe3GBTUhkeVFXalQxTlE/view?usp=sharing)
+- [model.json](https://drive.google.com/open?id=0B8Ig8LBgb5IzUDZablVsNmhzbEE)
+- [model.h5](https://drive.google.com/open?id=0B8Ig8LBgb5IzcXhVXzRpZ2FFTFU)
 
 It would be extremely intersting to try to do the project with squeeze net (todo for me)
 
