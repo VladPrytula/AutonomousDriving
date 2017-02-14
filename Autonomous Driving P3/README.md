@@ -46,17 +46,8 @@ python3 drive.py model.json
 ```
 It is important to know that there are several configurable parameters that can be configured in config.py
 ```
-BATCH_SIZE = 100
-# Number of EPOCHS
-NB_EPOCH = 7
-
-TRAIN_DATA = ['data/lap1/driving_log.csv',
-              'data/lap1_reverse/driving_log.csv',
-              'data/lap2/driving_log.csv',
-              'data/lap2_reverse/driving_log.csv'
-              ]
-
-VALIDATION_DATA = ['data/test/driving_log.csv']
+BATCH_SIZE
+NUM_EPOCH
 ```
 I have selected the batch size of 100 (though sometimes it is recommended to use 128). The number of epochs that was used is only 7. 
 I have started experiments from 20, but looking at the loss it looks like 7 is more then enough for stable autonomous driving in the simulated environment
